@@ -115,8 +115,6 @@ tap "homebrew/services"
 tap "universal-ctags/universal-ctags"
 tap "heroku/brew"
 tap "homebrew/cask-fonts"
-tap "sambadevi/powerlevel9k"
-tap "homebrew/cask-cask"
 brew "universal-ctags", args: ["HEAD"]
 brew "git"
 cask "xquartz"
