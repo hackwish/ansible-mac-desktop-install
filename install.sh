@@ -174,14 +174,14 @@ sed -i -e 's/plugins=(git)/plugins=(git asdf rails bundler ruby)/g' ~/.zshrc
 if ! [ -f ~/Library/Fonts/Roboto\ Mono\ for\ Powerline.ttf ]
 then
   fancy_echo "Installing Powerline fonts"
-    git_clone_or_pull https://github.com/powerline/fonts
+    git clone https://github.com/powerline/fonts
     # install
     ./fonts/install.sh
     # clean-up a bit
     rm -rf fonts
 fi
 
-git_clone_or_pull https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 sed -i -e 's/robbyrussell/powerlevel9k\/powerlevel9k/g' ~/.zshrc
 
