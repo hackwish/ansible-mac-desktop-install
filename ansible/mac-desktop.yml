@@ -50,7 +50,7 @@
             - 'readline'
             - 'reattach-to-user-namespace'
             - 'ruby-build'
-            - 'sambadevi/powerlevel9k'
+            # - 'sambadevi/powerlevel9k'
             - 'ssh-copy-id'
             - 'sublime-text'
             - 'syncthing'
