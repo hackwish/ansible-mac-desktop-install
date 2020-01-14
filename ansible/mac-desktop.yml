@@ -90,7 +90,7 @@
             # - 'font-hack-nerd-font'
             - 'google-chrome'
             - 'google-cloud-sdk'
-            - 'google-drive'
+            # - 'google-drive'
             - 'google-hangouts'
             - 'gpg-suite'
             - 'ibm-cloud-cli'
