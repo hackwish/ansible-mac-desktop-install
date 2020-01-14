@@ -22,6 +22,7 @@
             - 'docker-compose'
             - 'docker-machine'
             - 'doxygen'
+            - 'freerdp'
             - 'gcc'
             - 'git'
             - 'git-flow'
@@ -49,7 +50,7 @@
             - 'rancher-compose'
             - 'rbenv'
             - 'rcm'
-            - 'rdesktop'
+            # - 'rdesktop'
             - 'readline'
             - 'reattach-to-user-namespace'
             - 'ruby-build'
@@ -129,6 +130,7 @@
             - 'visual-studio-code'
             - 'vlc'
             - 'wine-stable'
+            - 'xquartz'
             - 'zoom'
           state: present
           update_homebrew: yes
