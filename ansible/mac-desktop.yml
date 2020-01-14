@@ -44,7 +44,7 @@
             - 'nomad'
             - 'openssl'
             - 'packer'
-            # - 'powerlevel9k'
+            - 'powerlevel9k'
             - 'pyenv'
             - 'python'
             - 'rancher-compose'
