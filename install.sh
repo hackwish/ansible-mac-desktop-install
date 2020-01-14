@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # Major initial configuration part is based on https://github.com/thoughtbot/laptop
-
+# Others sources:
+# https://gist.github.com/EmanuelCadems/0a600dfb692213d88b0ce91ddf0fb0b2
+# https://gist.github.com/mrlesmithjr/f3c15fdd53020a71f55c2032b8be2eda
 fancy_echo() {
   local fmt="$1"; shift
 
