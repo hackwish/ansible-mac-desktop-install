@@ -108,7 +108,7 @@
             - 'meld'
             - 'microsoft-teams'
             - 'mysqlworkbench'
-            - 'nmap'
+            # - 'nmap'
             - 'pgadmin4'
             - 'postman'
             - 'robo-3t'
