@@ -125,7 +125,7 @@
             - 'tor-browser'
             - 'vagrant'
             - 'vagrant-manager'
-            - 'virtualbox'
+            # - 'virtualbox'
             # - 'virtualbox-extension-pack'
             - 'visual-studio-code'
             - 'vlc'
