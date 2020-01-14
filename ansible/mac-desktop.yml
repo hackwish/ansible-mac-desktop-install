@@ -22,7 +22,7 @@
             - 'docker-compose'
             - 'docker-machine'
             - 'doxygen'
-            - 'freerdp'
+            # - 'freerdp'
             - 'gcc'
             - 'git'
             - 'git-flow'
