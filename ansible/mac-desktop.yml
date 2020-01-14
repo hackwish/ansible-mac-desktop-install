@@ -53,6 +53,7 @@
             - 'sambadevi/powerlevel9k'
             - 'ssh-copy-id'
             - 'sublime-text'
+            - 'syncthing'
             - 'terraform'
             - 'terraform-inventory'
             - 'terraform-provisioner-ansible'
