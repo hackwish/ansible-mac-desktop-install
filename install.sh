@@ -116,6 +116,7 @@ tap "universal-ctags/universal-ctags"
 tap "heroku/brew"
 brew "universal-ctags", args: ["HEAD"]
 brew "git"
+cask "xquartz"
 EOF
 
 # fancy_echo "Update heroku binary ..."
