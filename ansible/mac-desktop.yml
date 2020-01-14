@@ -80,6 +80,7 @@
         vars:
           packages:
             - 'atom'
+            - 'android-platform-tools'
             - 'docker'
             - 'dropbox'
             - 'firefox'
@@ -105,6 +106,27 @@
             - 'virtualbox'
             - 'virtualbox-extension-pack'
             - 'visual-studio-code'
+            - 'postman'
+            - 'java'
+            - 'vlc'
+            - 'google-cloud-sdk'
+            - 'insomnia'
+            - 'android-studio'
+            - 'discord'
+            - 'intellij-idea-ce'
+            - 'microsoft-teams'
+            - 'teamviewer'
+            - 'meld'
+            - 'mysqlworkbench'
+            - 'telegram'
+            - 'pgadmin4'
+            - 'wine-stable'
+            - 'tor-browser'
+            - 'robo-3t'
+            - 'signal'
+            - 'zoom'
+            - 'soapui'
+            - 'azure-data-studio'
           state: present
           update_homebrew: yes
           upgrade_all: yes
