@@ -1,0 +1,49 @@
+- name: Deploy MAC Desktop with Ansible
+  hosts: desktop
+
+  tasks:
+    - homebrew:
+      name: "{{ packages }}"
+      vars:
+        packages:
+          - caskroom/cask
+          - caskroom/fonts
+          - ccze
+          - coreutils
+          - curl
+          - font-hack-nerd-font
+          - gcc
+          - git
+          - git-flow
+          - git-ftp
+          - git-lfs
+          - go
+          - google-chrome
+          - gpg-suite
+          # - heroku/brew/heroku
+          - htop
+          - hub
+          - imagemagick
+          - iterm2
+          - libmagic
+          - libyaml
+          - openssl
+          # - parity
+          - powerlevel9k
+          - rcm
+          - readline
+          - reattach-to-user-namespace
+          - sambadevi/powerlevel9k
+          - skype
+          - slack
+          - sublime-text
+          - the_silver_searcher
+          - tmux
+          - universal-ctags
+          - vim
+          - watch
+          - watchman
+          - xz
+          - yarn
+          - zsh
+      state: present
