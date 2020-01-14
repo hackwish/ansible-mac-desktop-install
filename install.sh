@@ -112,6 +112,8 @@ tap "thoughtbot/formulae"
 tap "homebrew/services"
 tap "universal-ctags/universal-ctags"
 tap "heroku/brew"
+brew "universal-ctags", args: ["HEAD"]
+brew "git"
 EOF
 
 # fancy_echo "Update heroku binary ..."
@@ -120,7 +122,7 @@ EOF
 
 fancy_echo "Configuring asdf version manager ..."
 if [ ! -d "$HOME/.asdf" ]; then
-  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.5.0
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf
   append_to_zshrc "source $HOME/.asdf/asdf.sh" 1
 fi
 
