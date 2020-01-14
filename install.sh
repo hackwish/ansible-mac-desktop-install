@@ -181,10 +181,11 @@ then
     rm -rf fonts
 fi
 
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-
-sed -i -e 's/robbyrussell/powerlevel9k\/powerlevel9k/g' ~/.zshrc
-
+if ! [ -d ~/.oh-my-zsh/custom/themes/powerlevel9k ]
+then
+    git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+    sed -i -e 's/robbyrussell/powerlevel9k\/powerlevel9k/g' ~/.zshrc
+fi
 
 if [ -f "$HOME/.laptop.local" ]; then
   fancy_echo "Running your customizations from ~/.laptop.local ..."
