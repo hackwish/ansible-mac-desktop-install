@@ -160,9 +160,31 @@ gem update --system
 number_of_cores=$(sysctl -n hw.ncpu)
 bundle config --global jobs $((number_of_cores - 1))
 
-fancy_echo "Installing latest Node ..."
-bash "$HOME/.asdf/plugins/nodejs/bin/import-release-team-keyring"
-install_asdf_language "nodejs"
+# fancy_echo "Installing latest Node ..."
+# bash "$HOME/.asdf/plugins/nodejs/bin/import-release-team-keyring"
+# install_asdf_language "nodejs"
+
+if ! [ -d ~/.oh-my-zsh ]
+then
+  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
+
+sed -i -e 's/plugins=(git)/plugins=(git asdf rails bundler ruby)/g' ~/.zshrc
+
+if ! [ -f ~/Library/Fonts/Roboto\ Mono\ for\ Powerline.ttf ]
+then
+  fancy_echo "Installing Powerline fonts"
+    git_clone_or_pull https://github.com/powerline/fonts
+    # install
+    ./fonts/install.sh
+    # clean-up a bit
+    rm -rf fonts
+fi
+
+git_clone_or_pull https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+sed -i -e 's/robbyrussell/powerlevel9k\/powerlevel9k/g' ~/.zshrc
+
 
 if [ -f "$HOME/.laptop.local" ]; then
   fancy_echo "Running your customizations from ~/.laptop.local ..."

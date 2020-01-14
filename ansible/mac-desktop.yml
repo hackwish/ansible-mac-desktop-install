@@ -6,11 +6,17 @@
       name: "{{ packages }}"
       vars:
         packages:
+          # - heroku/brew/heroku
+          # - parity
+          - azure-cli
+          - bash-completion
           - caskroom/cask
           - caskroom/fonts
           - ccze
           - coreutils
           - curl
+          - derailed/k9s/k9s
+          - docker
           - font-hack-nerd-font
           - gcc
           - git
@@ -20,15 +26,18 @@
           - go
           - google-chrome
           - gpg-suite
-          # - heroku/brew/heroku
           - htop
           - hub
+          - ibmcloud
           - imagemagick
           - iterm2
+          - kubectl
+          - kubernetes-helm
           - libmagic
           - libyaml
+          - minikube
+          - node
           - openssl
-          # - parity
           - powerlevel9k
           - rcm
           - readline
@@ -37,10 +46,14 @@
           - skype
           - slack
           - sublime-text
+          - terraform
           - the_silver_searcher
           - tmux
           - universal-ctags
+          - vagrant
+          - vagrant-manager
           - vim
+          - virtualbox
           - watch
           - watchman
           - xz
