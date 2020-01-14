@@ -91,7 +91,7 @@
             - 'dropbox'
             - 'firefox'
             - 'forticlient'
-            # - 'font-hack-nerd-font'
+            - 'font-hack-nerd-font'
             - 'google-chrome'
             - 'google-cloud-sdk'
             # - 'google-drive'
