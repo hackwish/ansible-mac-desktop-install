@@ -37,6 +37,7 @@
             - 'libyaml'
             - 'minikube'
             - 'nano'
+            - 'ncdu'
             - 'nmap'
             - 'node'
             - 'nomad'
